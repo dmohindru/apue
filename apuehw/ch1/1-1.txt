@@ -1,0 +1,4 @@
+We verify this running following commands first on any normal directory, then at root directory.
+ls -ldi . && ls -ldi ..
+1. For normal directory inode number of . and .. with be different
+2. For root directory inode number of . and .. with be same.

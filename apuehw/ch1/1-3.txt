@@ -1,0 +1,5 @@
+Since msg to perror is a pointer, perror could modify the string that
+msg points to. The qualifier const, however says that perror does not modify
+what the pointer points to. On the other had the error number argument to strerror
+is an integer, and since C passes all arguments by value the strerror function
+couldn't modify this value even if it wanted to.

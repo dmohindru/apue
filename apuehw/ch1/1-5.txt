@@ -1,0 +1,9 @@
+Max value of signed 32 bit integer 2,147,483,647
+System counts 100 ticks per seconds
+Number of seconds that can be counted with signed integer
+2,147,483,647 / 100
+
+Converting in number of days
+2,147,483,647 / 100 * 60 * 60 * 24 
+
+Approximately 248 days

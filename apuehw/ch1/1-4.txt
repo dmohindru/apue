@@ -1,0 +1,15 @@
+Max value of signed 32 bit integer 2,147,483,647
+Since calander time counts number of seconds Since
+Epoch 00:00:00 January 1, 1970. So number of maximum 
+second a 32 bit integer can count is max value of 
+unsigned int which is 2,147,483,647. Converting this value
+in number of years
+2147483647 / (60*60*24*365) = 68.04
+
+So it will overflow during year 2038. 
+
+We can extent its overflow point by making it 64-bit integer.
+Application will need to be recompiled in order to work properly.
+More many system would also need to be recompiled in order to work
+properly, since many file systems use 32 bit value to store access/modified 
+time for media files.
