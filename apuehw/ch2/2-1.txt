@@ -1,0 +1,12 @@
+All the header files should be placed in following macro 
+#ifndef _HEADER_NAME   /* Header file  */
+#def _HEADER_NAME
+/* all header content goes here */
+typedef int             __int32_t;
+typedef unsinged int    __uint32_t;
+.
+.
+#ifndef _SIZE_T_DECLARED
+typedef __size_t
+#define _SIZE_T_DECLARED 
+#endif              /* Header file  */
