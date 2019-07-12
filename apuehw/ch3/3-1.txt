@@ -1,0 +1,3 @@
+All disk I/O goes through kernel's block buffer. Since all the data passes through 
+kernel buffer, here unbuffered means lack of automatic buffering in user process by 
+there two function (read, write). Each read and write invokes single system call.

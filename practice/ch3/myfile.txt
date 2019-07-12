@@ -1,0 +1,2 @@
+ABCDEFGH - Written from 1st descriptor
+abcdefg - Written from 2nd descriptor
