@@ -1,0 +1,8 @@
+./a.out > outfile 2>&1
+first standard output of program a.out is redirected to outfile and then dups standard output to file descriptor 2.
+result is both standard output and standard error points to same file.
+
+./a.out 2>&1 > outfile
+first standard error of program is redirected to its standard output (dup is executed first). Then standard output of a.out is redirected
+to file outfile. Result is that descriptor 1 points to file table entry of for outfile, and descriptor 2 points to file table entry for terminal.
+

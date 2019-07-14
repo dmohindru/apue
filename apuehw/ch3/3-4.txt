@@ -1,0 +1,7 @@
+With this code sequence Standard input, Standard output and Standard error points to same file
+descriptor.
+
+if fd is 1 then Standard input, Standard error points to Standard output. And nothing need to be closed.
+
+if fd is 2 then Standard input, Standard output and Standard error points to file opened with descriptor 3.
+So 4 file descriptor points same file. We need to close 1 file descriptor.
