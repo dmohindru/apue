@@ -1,0 +1,7 @@
+1. First create file creation mode as
+# umask 444
+2. Then we create a file as
+# echo "Hello, World" > test.temp
+3. Try to read file as
+# cat test.temp
+Output: cat: test.temp: Permission 

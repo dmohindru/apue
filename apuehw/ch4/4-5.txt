@@ -1,0 +1,8 @@
+1. For directory it is not possible to have zero size as any directory in unix type system would
+have two entries (expect root directory). 
+(.)  current directory
+(..) parent directory
+
+2. File is a symbolic link if and only if it points to some other file or directory in system
+(weather exits or non exits). So symbolic link must contain some data which point to some other file/directory.
+Hence it not possible to have symbolic link of size zero.  

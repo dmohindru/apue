@@ -1,0 +1,2 @@
+with command umask 777
+file is created which is inaccessable to any one on system. 
