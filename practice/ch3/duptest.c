@@ -3,7 +3,7 @@
    Author:          Dhruv Mohindru
    Description:     Simple program to test functionality of dup system call
 */
-#include "../apue.h"
+#include "../include/apue.h"
 #include <fcntl.h>
 #include <string.h>
 
