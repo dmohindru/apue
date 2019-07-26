@@ -1,0 +1,8 @@
+A program can maintain a log file which is updated each time a program is opened.
+
+To check for new mail received, a program can check modification of new mail file with
+modification date of log file. All mail file with times newer than log file would be
+"new mail"
+
+To check for unread mail, a program can check access time of a mail file with access time
+of log file. All mail files with acess times older than log file would be "unread mail since".

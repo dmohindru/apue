@@ -7,12 +7,10 @@
 #include <stdio.h>
 #include <fcntl.h>
 
-static int all_zeros(char *buf, size_t buf_size);
-
 int
 main(int argc, char *argv[])
 {
-    int fd_src, fd_dest, n;
+    int fd_src, fd_dest, n, i;
     size_t buf_size;
     struct stat	buf;
     char *read_buf;
@@ -46,9 +44,10 @@ main(int argc, char *argv[])
 
     /* Read contents of source file and write to destination file */
     while ((n = read(fd_src, read_buf, buf_size)) > 0) {
-        if (all_zeros(read_buf, buf_size) == 0)
-		    if (write(fd_dest, read_buf, n) != n)
-			    err_sys("write error");
+        for (i = 0; i < n; i++)
+            if (read_buf[i] != 0)
+                if (write(fd_dest, read_buf+i, 1) != 1)
+			        err_sys("write error");
     }
 
     /* Close source file */
@@ -59,15 +58,4 @@ main(int argc, char *argv[])
         err_sys("Close error on destination file");
 
     exit(0);
-
-}
-
-/*allzeros: returns true (1) if buf contains all zeros, 0 otherwise*/
-static int all_zeros(char *buf, size_t buf_size)
-{
-    int i;
-    for (i = 0; i < buf_size; i++)
-        if (buf[i] != 0)
-            return 0;
-    return 1;
 }

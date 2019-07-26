@@ -1,0 +1,3 @@
+We can fetch the current access and modification times using stat function.
+Then update desired one of the two times value and use old times for second times value we
+fetched from stat function.

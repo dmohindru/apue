@@ -1,0 +1,3 @@
+Difference in file access permission is because
+1. Kernel has default access permission when file is created. In this case rw-r--r--
+2. Shell also have default acess permission for file when created with rediruction. In this case rw-rw-rw-

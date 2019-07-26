@@ -10,7 +10,7 @@ include $(ROOT)/Make.defines.$(PLATFORM)
 
 
 #PROGS =	access cdpwd changemod devrdev filetype mycd umask unlink $(ZAP)
-PROGS =	4-1 4-4 hole 4-6
+PROGS =	4-1 4-4 hole 4-6 unlink ftw8 4-11
 #MOREPROGS = ftw8
 
 all:	$(PROGS)

@@ -1,0 +1,1 @@
+System's limit on number of open file with limit how deep recursion call can go in myftw function.

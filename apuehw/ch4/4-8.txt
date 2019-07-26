@@ -1,0 +1,5 @@
+1. du (disk utilized) command works on folder and it slower than df (disk free) command. Moreover when a file in deleted (unlinked)
+du command does not shows the deleted file, even though it is being held by a process deleting the file.
+
+2. df command works on partation and read file system meta data to report free disk available, which is faster also. df command will
+not show available space when a file is deleted but is being held by a process deleting the file.

@@ -1,0 +1,3 @@
+chroot function changes the apparent root directory of running process to a new root directory.
+Only superuser can execute chroot and once you changed root of process, it can never get back to
+the original root.
